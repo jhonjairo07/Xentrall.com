@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f6f8fa;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+
+body > p {
+    max-width: 800px;
+    margin: 32px auto 24px auto;
+    background: #fff;
+    padding: 24px 32px;
+    border-radius: 14px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #333;
+    text-align: center;
+}
+
+
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 16px;
+    padding: 20px;
+}
+
+.imagen-item img {
+    width: 100%;
+    max-width: 180px;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 13px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.imagen-item {
+    text-align: center;
+}
+
+
+@media (max-width: 800px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 500px) {
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+}
+
+.main-header {
+    background: linear-gradient(90deg, #005baa 0%, #0081c9 100%);
+    color: #fff;
+    padding: 32px 0 24px 0;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+    border-radius: 0 0 88px 88px;
+}
+
+.main-header h1 {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+footer {
+    background: linear-gradient(90deg, #005baa 0%, #0081c9 100%);
+    color: #fff;
+    text-align: center;
+    padding: 24px 0 16px 0;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.06);
+    margin-top: 40px;
+    border-radius: 88px 88px 0 0;
+}
+
+footer p {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 500;
+}
